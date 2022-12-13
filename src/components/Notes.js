@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, memo } from "react";
+import classNames from "classnames";
 import { Context } from "../hooks/useStore";
 
 const Note = ({ trackID, stepID, isNoteOn, isNoteOnCurrentStep, play }) => {
