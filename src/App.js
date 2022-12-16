@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ToolBar from "./components/ToolBar";
 import Steps from "./components/Steps";
 import TrackList from "./components/TrackList";
-import PlayHead from "./components/PlayHead";
+// import PlayHead from "./components/PlayHead";
 import { Provider } from "./hooks/useStore";
 import useTimer from "./hooks/useTimer";
 import useStyles from "./hooks/useStyles";
@@ -16,7 +16,7 @@ function App() {
   const totalSteps = stepsPerBar * barsPerSequence;
   const totalBeats = beatsPerBar * barsPerSequence;
 
-  const [BPM, setBPM] = useState(128);
+  const [BPM, setBPM] = useState(93);
   const [startTime, setStartTime] = useState(null);
   const [pastLapsedTime, setPastLapse] = useState(0);
   const [currentStepID, setCurrentStep] = useState(null);
@@ -63,12 +63,12 @@ function App() {
     <Provider>
       <main className="app">
         <header className="app_header">
-          <h1 className="app_title">TR-808</h1>
+          <h1 className="app_title">EH-808</h1>
           <ToolBar {...toolBarProps} />
         </header>
         <Steps count={totalSteps} />
         <div className="app_content">
-          <PlayHead {...playHeadProps} />
+          {/* <PlayHead {...playHeadProps} /> */}
           <TrackList {...trackListProps} />
         </div>
       </main>

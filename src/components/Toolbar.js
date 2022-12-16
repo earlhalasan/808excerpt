@@ -37,21 +37,6 @@ const ToolBar = ({
   return (
     <nav className="toolbar">
       <button
-        className="form_element button_stop"
-        onClick={stopPlayback}
-        aria-label="Stop"
-      >
-        <svg width="14" height="14" viewBox="0 0 14 14">
-          <rect
-            className="button_icon_path"
-            x="2"
-            y="2"
-            width="10"
-            height="10"
-          />
-        </svg>
-      </button>
-      <button
         className="form_element button_play_pause"
         onClick={togglePlayback}
         aria-label="Play / Pause"
@@ -75,6 +60,22 @@ const ToolBar = ({
           )}
         </svg>
       </button>
+      <button
+        className="form_element button_stop"
+        onClick={stopPlayback}
+        aria-label="Stop"
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14">
+          <rect
+            className="button_icon_path"
+            x="2"
+            y="2"
+            width="10"
+            height="10"
+          />
+        </svg>
+      </button>
+
       <input
         className="form_element input_bpm"
         id="bpm"
@@ -86,7 +87,7 @@ const ToolBar = ({
         BPM
       </label>
       <select
-        className="form_element select_sequence"
+        className="form_element select_sequence "
         value={selectedSequenceID}
         onChange={(e) => selectSequence(+e.target.value)}
         aria-label="Select sequence"

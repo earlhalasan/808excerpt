@@ -1,6 +1,6 @@
 .steps {
   display: flex;
-  padding-left: var(--left-gutter-size);
+  padding-left: 90px;
   border-top: 1px solid var(--color-dark-grey);
   border-bottom: 1px solid var(--color-dark-grey);
 }

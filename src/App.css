@@ -6,6 +6,7 @@
 html {
   font-size: var(--base-font-size);
   color: var(--color-fg);
+  background-color: var(--color-bg);
 }
 
 .app {
@@ -45,5 +46,6 @@ html {
   margin-top: var(--spacer);
   margin-bottom: var(--spacer);
   position: relative;
+  margin-left: -30px;
   transform: translateZ(0);
 }
