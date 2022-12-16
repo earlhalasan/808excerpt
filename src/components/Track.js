@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import useSound from "../hooks/useSound";
 import Note from "./Notes";
-// import "./Track.css";
+import "./Track.css";
 
 const Track = ({
   trackID,
