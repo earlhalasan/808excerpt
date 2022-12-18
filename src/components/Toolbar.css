@@ -24,8 +24,16 @@
   cursor: pointer;
 }
 
-.button_icon_path {
-  fill: var(--color-fg);
+.button_icon_stop {
+  fill: #e06666;
+}
+
+.button_icon_play {
+  fill: #8fce00;
+}
+
+.button_icon_pause {
+  fill: #ffe599;
 }
 
 .input_bpm {
