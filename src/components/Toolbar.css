@@ -20,7 +20,7 @@
 .button_play_pause,
 .button_stop {
   width: var(--button-pause-play-width);
-  padding-left: 6px;
+  padding-left: 7px;
   cursor: pointer;
 }
 
